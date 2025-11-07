@@ -7,7 +7,11 @@ Welcome to my personal **Portfolio Website**, built to showcase my skills, proje
 ## 🚀 Live Demo
 
 You can view the live site here:
+<<<<<<< HEAD
 👉 [**My Portfolio**](https://solotechrics.github.io/Web-Development-Project/)
+=======
+👉 [**My Portfolio**]()
+>>>>>>> a0987af8001b26e37c60fcbc91b9bdbcd7a6fc28
 
 ---
 
