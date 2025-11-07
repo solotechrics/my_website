@@ -1,0 +1,315 @@
+/* ===== GENERAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  scroll-padding-top: 70px; /* Prevent content hiding under fixed navbar */
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* ===== NAVBAR ===== */
+.nav-bcg {
+  background: linear-gradient(90deg, #000000, #737373);
+  padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #007bff !important;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-container {
+  text-align: left;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.8rem);
+  font-weight: 600;
+  color: #212529;
+  position: relative;
+  height: 60px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 8rem; /* Adjust for navbar */
+  padding-bottom: 4rem;
+  background: linear-gradient(90deg, #000000, #737373);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  border-right: 2px solid #212529;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.75s step-end infinite;
+  color: white;
+  font-size: 24px;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Typewriter text animation */
+.text1,
+.text2,
+.text3 {
+  position: absolute;
+  opacity: 0;
+}
+
+.text1 {
+  animation: typing1 20s steps(30, end) infinite;
+}
+
+.text2 {
+  animation: typing2 20s steps(30, end) infinite;
+}
+
+.text3 {
+  animation: typing3 20s steps(30, end) infinite;
+}
+
+/* keyframes for each text */
+@keyframes typing1 {
+  0%,
+  5% {
+    opacity: 0;
+    width: 0;
+  }
+  5%,
+  25% {
+    opacity: 1;
+    width: 100%;
+  }
+  30%,
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+@keyframes typing2 {
+  0%,
+  30% {
+    opacity: 0;
+    width: 0;
+  }
+  35%,
+  55% {
+    opacity: 1;
+    width: 100%;
+  }
+  60%,
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+@keyframes typing3 {
+  0%,
+  60% {
+    opacity: 0;
+    width: 0;
+  }
+  65%,
+  85% {
+    opacity: 1;
+    width: 100%;
+  }
+  90%,
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.hero img {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  mix-blend-mode: lighten;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    text-align: left;
+  }
+
+  .hero img {
+    max-width: 75%;
+  }
+}
+
+/* ===== SECTIONS GENERAL ===== */
+section {
+  padding: 5rem 0;
+}
+
+section h1,
+section h3 {
+  margin-bottom: 2rem;
+}
+
+/* ===== RESUME SECTION ===== */
+.my-btn {
+  background-color: rgb(114, 112, 112);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.my-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.project-bcg {
+  background: linear-gradient(90deg, #000000, #ffffff);
+  color: white;
+}
+
+.card-body {
+  background-color: rgb(241, 239, 239);
+  color: #656a97;
+  text-align: left;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-heading {
+  color: #4b4f71;
+}
+
+.about-text p {
+  text-align: left;
+  line-height: 1.8;
+  color: #656a97;
+  font-weight: 700;
+  font-family: "Comic Relief", system-ui;
+}
+
+.about-btn1 {
+  background-color: #4b4f71;
+  color: white;
+}
+
+.about-btn1:hover {
+  background-color: white;
+  color: #4b4f71;
+  border: 2px solid #4b4f71;
+}
+
+.about-btn2 {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.about-btn2:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-bcg {
+  background: linear-gradient(90deg, #a6a6a6, #ffffff);
+  color: #2c2b2b;
+}
+
+.github {
+  background-color: #333;
+  color: #fff;
+  transition: ease 0.5s;
+}
+
+.github:hover {
+  background-color: #181717;
+  color: white;
+  border: none;
+}
+
+.linkedln {
+  background-color: #0077b5;
+  color: #fff;
+  transition: ease 0.5s;
+}
+
+.linkedln:hover {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+}
+
+.twitter {
+  background-color: #333;
+  color: white;
+  transition: ease 0.5s;
+}
+
+.twitter:hover {
+  background-color: #181717;
+  color: white;
+  border: none;
+}
+
+/* Make social buttons stack on mobile */
+@media (max-width: 768px) {
+  .contact-bcg .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-bcg .btn {
+    width: 80%;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer-bcg {
+  background: linear-gradient(90deg, #000000, #737373);
+  color: white;
+}
+
+.footer-bcg a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+.footer-bcg a:hover {
+  text-decoration: underline;
+}
