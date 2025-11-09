@@ -16,6 +16,12 @@ body {
   color: #222;
 }
 
+/* html, body {
+  max-width: 100%;
+overflow-x: hidden;
+
+} */
+
 /* ===== NAVBAR ===== */
 .nav-bcg {
   background: linear-gradient(90deg, #000000, #737373);
@@ -49,6 +55,7 @@ body {
   padding-top: 8rem; /* Adjust for navbar */
   padding-bottom: 4rem;
   background: linear-gradient(90deg, #000000, #737373);
+  overflow-x: hidden;
 }
 
 .hero h1 {
