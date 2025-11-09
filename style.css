@@ -27,19 +27,21 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
+  color: #656a97 !important;
+}
+
+.navbar-nav .nav-link:hover {
   color: #007bff !important;
 }
 
 /* ===== HERO SECTION ===== */
 .hero-container {
   text-align: left;
-  font-size: clamp(1rem, 2vw + 0.5rem, 1.8rem);
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
   font-weight: 600;
   color: #212529;
   position: relative;
-  height: 60px;
 }
 
 .hero {
@@ -50,7 +52,7 @@ body {
 }
 
 .hero h1 {
-  color: white;
+ color: white;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -58,11 +60,18 @@ body {
 .hero-text {
   border-right: 2px solid #212529;
   white-space: nowrap;
-  overflow: hidden;
   display: inline-block;
+  overflow: hidden;
   animation: blink 0.75s step-end infinite;
   color: white;
   font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 989px) {
+  .hero-text {
+    text-align: center;
+  }
 }
 
 @keyframes blink {
@@ -158,10 +167,6 @@ body {
   .hero {
     text-align: left;
   }
-
-  .hero img {
-    max-width: 75%;
-  }
 }
 
 /* ===== SECTIONS GENERAL ===== */
@@ -212,6 +217,12 @@ section h3 {
 /* ===== ABOUT SECTION ===== */
 .about-heading {
   color: #4b4f71;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text p {
@@ -297,6 +308,18 @@ section h3 {
     width: 80%;
     margin-bottom: 0.75rem;
   }
+
+  .hero-text {
+  /* border-right: 2px solid #212529;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block; */
+  /* animation: blink 0.75s step-end infinite; */
+  /* color: white;
+  font-size: 18px; */
+}
+
+
 }
 
 /* ===== FOOTER ===== */
@@ -312,4 +335,10 @@ section h3 {
 
 .footer-bcg a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px){
+  .about {
+    padding: 0 2rem;
+  }
 }
