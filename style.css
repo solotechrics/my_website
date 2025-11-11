@@ -16,10 +16,10 @@ body {
   color: #222;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
-overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 /* ===== NAVBAR ===== */
@@ -41,6 +41,10 @@ overflow-x: hidden;
   color: #007bff !important;
 }
 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /* ===== HERO SECTION ===== */
 .hero-container {
   text-align: left;
@@ -58,7 +62,7 @@ overflow-x: hidden;
 }
 
 .hero h1 {
- color: white;
+  color: white;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -327,7 +331,6 @@ section h3 {
     width: 80%;
     margin-bottom: 0.75rem;
   }
-
 }
 
 /* ===== FOOTER ===== */
@@ -345,7 +348,7 @@ section h3 {
   text-decoration: underline;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .about {
     padding: 0 2rem;
   }
