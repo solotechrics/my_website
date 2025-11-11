@@ -293,14 +293,14 @@ section h3 {
 }
 
 .contact-bcg .btn {
-    padding: 12px 20px;
-    font-size: 1rem;
-    min-width: 48px;
-    min-height: 48px;
-    margin-bottom: 0.75rem;
-  }
+  padding: 12px 20px;
+  font-size: 1rem;
+  min-width: 48px;
+  min-height: 48px;
+  margin-bottom: 0.75rem;
+}
 
-  .bi {
+.bi {
   width: 24px;
   height: 24px;
 }
@@ -347,7 +347,6 @@ section h3 {
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 /* ===== FOOTER ===== */
