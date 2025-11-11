@@ -288,6 +288,19 @@ section h3 {
   object-fit: cover;
 }
 
+.contact-bcg .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    min-width: 48px;
+    min-height: 48px;
+    margin-bottom: 0.75rem;
+  }
+
+  .bi {
+  width: 24px;
+  height: 24px;
+}
+
 .github {
   background-color: #333;
   color: #fff;
@@ -331,10 +344,6 @@ section h3 {
     align-items: center;
   }
 
-  .contact-bcg .btn {
-    width: 80%;
-    margin-bottom: 0.75rem;
-  }
 }
 
 /* ===== FOOTER ===== */
